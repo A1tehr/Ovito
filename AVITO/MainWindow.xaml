@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AVITO"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -16,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="LightBlue"/>
@@ -23,16 +24,31 @@
             <Button Content="Вход и регистрация" Margin="0,0,20,0" VerticalAlignment="Center"/>
             <Button Content="Подать обьявление" VerticalAlignment="Center"/>
         </StackPanel>
-        <Image Source="logo.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" />
-        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Vertical" >
-            <TextBlock Text="Объявления" FontSize="25"  VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,0,0,10"/>
-            <StackPanel HorizontalAlignment="Center" Width="200">
-                <Image Source="test.jpg" Height="150"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="logo.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" />
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Объявления" FontSize="25"  VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" />
+        <ScrollViewer Grid.Row="3" Grid.Column="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" >
+                    <StackPanel HorizontalAlignment="Center" Margin="5" >
+                        <Image Source="test.jpg" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality" Height="200" HorizontalAlignment="Stretch"/>
+                        <TextBlock FontSize="17" Foreground="#009cf0" TextWrapping="Wrap" Text="Toyota RAV4, 1996" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="20" FontWeight="Bold" Text="150000 ₽" HorizontalAlignment="Center" />
+                        <TextBlock FontSize="17" Foreground="Gray" Text="Воронеж, р-н Ленинский" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Medium"/>
+                        <TextBlock FontSize="17" Foreground="Gray" Text="06.11.2020 в 10:18" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Stretch" >
 
-                <TextBlock Foreground="#009cf0" Text="Toyota RAV4, 1996" FontWeight="Bold" HorizontalAlignment="Center"/>
-            </StackPanel>
-        </StackPanel>
-        
-        
+                    </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Stretch" >
+
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Window>

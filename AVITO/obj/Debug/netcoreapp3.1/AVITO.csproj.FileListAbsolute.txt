@@ -36,3 +36,22 @@ C:\MelenchukProjects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.csproj.CoreCompil
 C:\MelenchukProjects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.dll
 C:\MelenchukProjects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.pdb
 C:\MelenchukProjects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.genruntimeconfig.cache
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.exe
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.deps.json
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.runtimeconfig.json
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.runtimeconfig.dev.json
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.dll
+D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\AVITO.pdb
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.csprojAssemblyReference.cache
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO_MarkupCompile.cache
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO_MarkupCompile.lref
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.g.resources
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.AssemblyInfoInputs.cache
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.AssemblyInfo.cs
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.csproj.CoreCompileInputs.cache
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.dll
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.pdb
+D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.genruntimeconfig.cache
