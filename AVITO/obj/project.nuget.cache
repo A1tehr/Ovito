@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4nQUs/YfRXmnnrBjLhzswrbPuruNHXp0fGOtveDrqDn11rkf1Dv9AZTK3PU6MlwxayMzxMLABsgwPcJhTtA5FA==",
+  "dgSpecHash": "2aeNTsLaAVW9w5Y/DS+zulwns27YAgHxKjsGZVmeJVql20jBWW6KcV78XZs1OnVSnOFqMD379XJ0YnY6Cl9lXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\AVITO.csproj",
+  "projectFilePath": "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

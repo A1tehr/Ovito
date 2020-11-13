@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\AVITO.csproj": {}
+    "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\AVITO.csproj": {
+    "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\AVITO.csproj",
+        "projectUniqueName": "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj",
         "projectName": "AVITO",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\AVITO.csproj",
+        "projectPath": "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Ovito\\AVITO\\obj\\",
+        "outputPath": "C:\\MelenchukProjects\\Ovito\\AVITO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

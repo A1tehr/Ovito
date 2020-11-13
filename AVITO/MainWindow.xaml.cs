@@ -2,18 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace AVITO
 {
@@ -26,6 +17,7 @@ namespace AVITO
         public Account Account { set; get; }
         public List<byte[]> ImagesToAdd { set; get; }
         private DataContext db = new DataContext();
+        private List<Announcement> currentAnnouncements;
 
         private bool addImage1 = false;
         private bool addImage2 = false;
@@ -37,6 +29,7 @@ namespace AVITO
             Instance = this;
             InitializeComponent();
             ImagesToAdd = new List<byte[]>();
+            currentAnnouncements = new List<Announcement>();
             RefreshAnnounsments();
         }
 
@@ -56,6 +49,19 @@ namespace AVITO
             TextBox_Place.Text = "";
             Button_Nav_AddAnnouncment.Visibility = Visibility.Collapsed;
             Grid_AddAnnouncment.Visibility = Visibility.Visible;
+            BitmapImage bitmap = new BitmapImage();
+
+            bitmap.BeginInit();
+            bitmap.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+            bitmap.CacheOption = BitmapCacheOption.OnLoad;
+            bitmap.UriSource = new Uri("add_photo.png", UriKind.RelativeOrAbsolute);
+            bitmap.EndInit();
+            bitmap.Freeze();
+
+            Add_Image_1.Source = bitmap;
+            Add_Image_2.Source = bitmap;
+            Add_Image_3.Source = bitmap;
+            Add_Image_4.Source = bitmap;
         }
 
         private void Button_AddImageClick(object sender, RoutedEventArgs e)
@@ -254,6 +260,7 @@ namespace AVITO
             Panel_2.Children.Clear();
             Panel_3.Children.Clear();
             List<Announcement> announcements = new List<Announcement>();
+            currentAnnouncements.Clear();
             foreach(var ad in db.Announcements)
             {
                 announcements.Add(ad);
@@ -264,7 +271,7 @@ namespace AVITO
                 {
                     if (image.AnnounsmentID == ad.Id)
                     {
-                        new Announcement(ad.Name, ad.Price, ad.Place, ad.CreateTime, image.GetBitmapImage());
+                        currentAnnouncements.Add(new Announcement(ad.Name, ad.Price, ad.Place, ad.CreateTime, image.GetBitmapImage()));
                         break;
                     }
                 }

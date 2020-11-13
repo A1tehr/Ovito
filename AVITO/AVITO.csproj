@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="add_photo.png" />
     <None Remove="logo.png" />
     <None Remove="test.jpg" />
   </ItemGroup>
@@ -16,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="add_photo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

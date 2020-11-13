@@ -41,6 +41,8 @@ namespace AVITO
                 HorizontalAlignment = HorizontalAlignment.Center,
                 Margin = new Thickness(5)
             };
+            
+
             image = new Image()
             {
                 Cursor = Cursors.Hand,
@@ -63,7 +65,17 @@ namespace AVITO
             labelCreateDate = CreateTextBlock(17, Brushes.Gray, FontWeights.Medium);
             labelCreateDate.Text = dateOfCreate;
 
-            panel.Children.Add(image);
+            Button button = new Button();
+            button.Content = image;
+            button.Background = Brushes.Transparent;
+            button.BorderThickness = new Thickness(0);
+
+            button.Click += (a, b) =>
+            {
+
+            };
+
+            panel.Children.Add(button);
             panel.Children.Add(labelName);
             panel.Children.Add(labelPrice);
             panel.Children.Add(labelPlace);
@@ -72,10 +84,6 @@ namespace AVITO
             int panel1 = MainWindow.Instance.Panel_1.Children.Count;
             int panel2 = MainWindow.Instance.Panel_2.Children.Count;
             int panel3 = MainWindow.Instance.Panel_3.Children.Count;
-
-            MessageBox.Show(panel1 + " " + panel2 + " " + panel3);
-
-            //MainWindow.Instance.Panel_3.Children.Add(panel);
 
             if(panel1 == panel2 && panel1 == panel3)
             {

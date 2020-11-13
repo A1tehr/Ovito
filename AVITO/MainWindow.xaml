@@ -57,9 +57,9 @@
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid>
                     <Image x:Name="Add_Image_1" Source="add_photo.png" Height="200" Stretch="Fill" Width="300" RenderOptions.BitmapScalingMode="HighQuality"/>
-                    <Image x:Name="Add_Image_2" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Top" />
-                    <Image x:Name="Add_Image_3" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Center" />
-                    <Image x:Name="Add_Image_4" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                    <Image x:Name="Add_Image_2" Source="add_photo.png" Height="80" Stretch="Fill" Width="80" HorizontalAlignment="Right" VerticalAlignment="Top" RenderOptions.BitmapScalingMode="HighQuality"/>
+                    <Image x:Name="Add_Image_3" Source="add_photo.png" Height="80" Stretch="Fill" Width="80" HorizontalAlignment="Right" VerticalAlignment="Center" RenderOptions.BitmapScalingMode="HighQuality" />
+                    <Image x:Name="Add_Image_4" Source="add_photo.png" Height="80" Stretch="Fill" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderOptions.BitmapScalingMode="HighQuality" />
                 </Grid>
                 <TextBlock Text="Название" TextAlignment="Center"/>
                 <TextBox x:Name="TextBox_Name" Width="500"/>
@@ -70,6 +70,31 @@
                 <Button Content="Добавить картинку" Click="Button_AddImageClick"/>
                 <Button Content="Разместить объявление" Click="Button_CreateAnnouncment"/>
             </StackPanel>
+        </Grid>
+        <Grid Grid.ColumnSpan="4" Grid.RowSpan="4">
+            <Grid Background="Gray" Opacity="0.5">
+                <Button Opacity="0" Click="Button_CloseLogin"/>
+            </Grid>
+            <Grid Background="White" Margin="100,20">
+                <StackPanel>
+                    <StackPanel x:Name="StackPanel_ForImages" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,20,0,0" HorizontalAlignment="Center">
+                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
+                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
+                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
+                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
+                    </StackPanel>
+                    <TextBlock Text="Название" FontSize="40" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="TextBlock_Name" Text="Название" FontSize="40" HorizontalAlignment="Center" Foreground="Blue" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock Text="Цена" FontSize="40" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="TextBlock_Price" Text="10000 P" FontSize="40" HorizontalAlignment="Center" Foreground="Blue" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock Text="Место" FontSize="40" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="TextBlock_Place" Text="Машмет" FontSize="40" HorizontalAlignment="Center" Foreground="Blue" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock Text="Номер телефона" FontSize="40" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="TextBlock_Number" Text="89507600891" FontSize="40" HorizontalAlignment="Center" Foreground="Blue" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBlock x:Name="TextBlock_DateCreate" Text="12.08.2020 15:11" FontSize="40" HorizontalAlignment="Center"/>
+                    
+                </StackPanel>
+            </Grid>
         </Grid>
         <Grid x:Name="Grid_LogIn" Grid.ColumnSpan="4" Grid.RowSpan="4" Visibility="Collapsed" >
             <Grid Background="Gray" Opacity="0.5">
