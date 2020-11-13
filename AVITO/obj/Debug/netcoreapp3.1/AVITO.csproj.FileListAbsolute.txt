@@ -78,3 +78,26 @@ D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.d
 D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Lexus\GitHub Projects\Ovito\AVITO\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\Lexus\GitHub Projects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.csproj.CopyComplete
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\MelenchukProjects\Ovito\AVITO\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\MelenchukProjects\Ovito\AVITO\obj\Debug\netcoreapp3.1\AVITO.csproj.CopyComplete

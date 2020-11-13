@@ -9,6 +9,7 @@ namespace AVITO
 {
     public class ImageDB
     {
+        public int Id { set; get; }
         public byte[] ImageBytes { set; get; }
 
         public ImageDB() { }

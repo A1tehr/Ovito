@@ -9,9 +9,11 @@ namespace AVITO
     {
         public DbSet<Announcement> Announcements { set; get; }
         public DbSet<ImageDB> Images { set; get; }
+        public DbSet<Account> Accounts { set; get; }
 
         public DataContext()
         {
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
