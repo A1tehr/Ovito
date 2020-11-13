@@ -73,8 +73,20 @@ namespace AVITO
             int panel2 = MainWindow.Instance.Panel_2.Children.Count;
             int panel3 = MainWindow.Instance.Panel_3.Children.Count;
 
-            MainWindow.Instance.Panel_1.Children.Add(panel);
+            MessageBox.Show(panel1 + " " + panel2 + " " + panel3);
 
+            //MainWindow.Instance.Panel_3.Children.Add(panel);
+
+            if(panel1 == panel2 && panel1 == panel3)
+            {
+                MainWindow.Instance.Panel_1.Children.Add(panel);
+            } else if (panel2 == panel3)
+            {
+                MainWindow.Instance.Panel_2.Children.Add(panel);
+            } else
+            {
+                MainWindow.Instance.Panel_3.Children.Add(panel);
+            }
         }
 
         private TextBlock CreateTextBlock(double fontSize, Brush foreGround, FontWeight fontWeight)

@@ -13,8 +13,6 @@ namespace AVITO
 
         public DataContext()
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

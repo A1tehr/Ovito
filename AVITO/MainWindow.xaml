@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="LightBlue"/>
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Вход и регистрация" Margin="0,0,20,0" VerticalAlignment="Center" Click="Button_LogIn"/>
+            <Button x:Name="Button_Nav_Login" Content="Вход и регистрация" Margin="0,0,20,0" VerticalAlignment="Center" Click="Button_LogIn"/>
             <Button x:Name="Button_Nav_AddAnnouncment" Click="Button_AddAnnouncment" Content="Подать обьявление" VerticalAlignment="Center"/>
         </StackPanel>
         <Image Cursor="Hand" RenderOptions.BitmapScalingMode="HighQuality" Source="logo.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" />
@@ -65,22 +65,21 @@
                 <Button Content="Разместить объявление" Click="Button_CreateAnnouncment"/>
             </StackPanel>
         </Grid>
-        <Grid x:Name="Grid_LogIn" Grid.ColumnSpan="4" Grid.RowSpan="4" >
+        <Grid x:Name="Grid_LogIn" Grid.ColumnSpan="4" Grid.RowSpan="4" Visibility="Collapsed" >
             <Grid Background="Gray" Opacity="0.5">
                 <Button Opacity="0" Click="Button_CloseLogin"/>
             </Grid>
-
-                <Grid Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="600">
-                <StackPanel x:Name="StackPanel_Login" Visibility="Collapsed">
+            <Grid Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="600">
+                <StackPanel x:Name="StackPanel_Login" Visibility="Visible">
                     <TextBlock FontWeight="Bold" Text="Войти" FontSize="40" HorizontalAlignment="Center" Margin="0,30"/>
                     <TextBlock Text="Логин" HorizontalAlignment="Center" FontSize="30"/>
-                    <TextBox Margin="40,20" FontSize="25"/>
+                    <TextBox x:Name="TextBox_Login" Margin="40,20" FontSize="25"/>
                     <TextBlock Text="Пароль" HorizontalAlignment="Center" FontSize="30"/>
-                    <PasswordBox Margin="40,20" FontSize="25"/>
-                    <Button Margin="100,20" Content="Войти" FontSize="25"/>
-                    <Button Margin="100,0" Content="Зарегестрироваться" FontSize="25"/>
+                    <PasswordBox x:Name="TextBox_Password" Margin="40,20" FontSize="25"/>
+                    <Button Margin="100,20" Content="Войти" FontSize="25" Click="Button_Authorization"/>
+                    <Button Margin="100,0" Content="Зарегестрироваться" FontSize="25" Click="Button_GoToRegistration"/>
                 </StackPanel>
-                <StackPanel x:Name="StackPanel_Registartion" Visibility="Visible">
+                <StackPanel x:Name="StackPanel_Registartion" Visibility="Collapsed">
                     <TextBlock FontWeight="Bold" Text="Зарегистрироваться" FontSize="40" HorizontalAlignment="Center" Margin="0,30"/>
                     <TextBlock Text="Логин" HorizontalAlignment="Center" FontSize="30"/>
                     <TextBox x:Name="TextBlock_Reg_Login" Margin="40,5,40,0" FontSize="25"/>

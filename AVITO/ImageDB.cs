@@ -11,6 +11,7 @@ namespace AVITO
     {
         public int Id { set; get; }
         public byte[] ImageBytes { set; get; }
+        public int AnnounsmentID { set; get; }
 
         public ImageDB() { }
 
