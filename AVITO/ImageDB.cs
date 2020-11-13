@@ -7,10 +7,11 @@ using System.Windows.Media.Imaging;
 
 namespace AVITO
 {
-    public class ImageJSON
+    public class ImageDB
     {
         public byte[] ImageBytes { set; get; }
 
+        public ImageDB() { }
 
         public BitmapImage GetBitmapImage()
         {
@@ -28,10 +29,6 @@ namespace AVITO
             }
             image.Freeze();
             return image;
-        }
-        public string Serialize()
-        {
-            return JsonSerializer.Serialize(this);
         }
     }
 }

@@ -22,7 +22,7 @@
         <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="LightBlue"/>
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Content="Вход и регистрация" Margin="0,0,20,0" VerticalAlignment="Center"/>
-            <Button Content="Подать обьявление" VerticalAlignment="Center"/>
+            <Button Click="Button_AddAnnouncment" Content="Подать обьявление" VerticalAlignment="Center"/>
         </StackPanel>
         <Image Cursor="Hand" RenderOptions.BitmapScalingMode="HighQuality" Source="logo.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" />
         <TextBlock Grid.Column="1" Grid.Row="2" Text="Объявления" FontSize="25"  VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" />
@@ -33,7 +33,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" >
+                <StackPanel x:Name="Panel_1" Orientation="Vertical" HorizontalAlignment="Stretch" >
                     <StackPanel HorizontalAlignment="Center" Margin="5" >
                         <Image Cursor="Hand" Source="test.jpg" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality" Height="200" HorizontalAlignment="Stretch"/>
                         <TextBlock FontSize="17" Foreground="#009cf0" TextWrapping="Wrap" Text="Toyota RAV4, 1996" FontWeight="Bold" HorizontalAlignment="Center"/>
@@ -42,13 +42,28 @@
                         <TextBlock FontSize="17" Foreground="Gray" Text="06.11.2020 в 10:18" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Medium"/>
                     </StackPanel>
                 </StackPanel>
-                    <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Stretch" >
+                <StackPanel x:Name="Panel_2" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Stretch" />
+                <StackPanel x:Name="Panel_3" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Stretch" />
 
-                    </StackPanel>
-                <StackPanel Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Stretch" >
-
-                </StackPanel>
             </Grid>
         </ScrollViewer>
+        <Grid Background="White" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid>
+                    <Image x:Name="Add_Image_1" Source="add_photo.png" Height="200" Stretch="Fill" Width="300" RenderOptions.BitmapScalingMode="HighQuality"/>
+                    <Image x:Name="Add_Image_2" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Top" />
+                    <Image x:Name="Add_Image_3" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                    <Image x:Name="Add_Image_4" Source="add_photo.png" Height="80" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                </Grid>
+                <TextBlock Text="Название" TextAlignment="Center"/>
+                <TextBox x:Name="TextBox_Name" Width="500"/>
+                <TextBlock Text="Цена" TextAlignment="Center"/>
+                <TextBox x:Name="TextBox_Price" Width="500"/>
+                <TextBlock Text="Место" TextAlignment="Center"/>
+                <TextBox x:Name="TextBox_Place" Width="500"/>
+                <Button Content="Добавить картинку" Click="Button_AddImageClick"/>
+                <Button Content="Разместить объявление" Click="Button_CreateAnnouncment"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

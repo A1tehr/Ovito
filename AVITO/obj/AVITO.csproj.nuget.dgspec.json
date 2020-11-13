@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj": {}
+    "D:\\Lexus\\GitHub Projects\\Ovito\\AVITO\\AVITO.csproj": {}
   },
   "projects": {
-    "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj": {
+    "D:\\Lexus\\GitHub Projects\\Ovito\\AVITO\\AVITO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj",
+        "projectUniqueName": "D:\\Lexus\\GitHub Projects\\Ovito\\AVITO\\AVITO.csproj",
         "projectName": "AVITO",
-        "projectPath": "C:\\MelenchukProjects\\Ovito\\AVITO\\AVITO.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\MelenchukProjects\\Ovito\\AVITO\\obj\\",
+        "projectPath": "D:\\Lexus\\GitHub Projects\\Ovito\\AVITO\\AVITO.csproj",
+        "packagesPath": "C:\\Users\\villi\\.nuget\\packages\\",
+        "outputPath": "D:\\Lexus\\GitHub Projects\\Ovito\\AVITO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\villi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
