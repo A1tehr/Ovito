@@ -24,6 +24,12 @@
             <Button Content="Вход и регистрация" Margin="0,0,20,0" VerticalAlignment="Center" Click="Button_LogIn"/>
             <Button x:Name="Button_Nav_AddAnnouncment" Click="Button_AddAnnouncment" Content="Подать обьявление" VerticalAlignment="Center"/>
         </StackPanel>
+        <StackPanel   Margin="200,20,0,0" Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Content="Авто" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Top"/>
+            <Button Content="Работа" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Top"/>
+            <Button Content="Недвижемость" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Top"/>
+            <Button Content="Услуги" FontSize="18" Margin="0,0,10,0" VerticalAlignment="Top"/>
+        </StackPanel>
         <Image Cursor="Hand" RenderOptions.BitmapScalingMode="HighQuality" Source="logo.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" />
         <TextBlock Grid.Column="1" Grid.Row="2" Text="Объявления" FontSize="25"  VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" />
         <ScrollViewer Grid.Row="3" Grid.Column="1">
@@ -65,7 +71,7 @@
                 <Button Content="Разместить объявление" Click="Button_CreateAnnouncment"/>
             </StackPanel>
         </Grid>
-        <Grid x:Name="Grid_LogIn" Grid.ColumnSpan="4" Grid.RowSpan="4" >
+        <Grid x:Name="Grid_LogIn" Grid.ColumnSpan="4" Grid.RowSpan="4" Visibility="Collapsed" >
             <Grid Background="Gray" Opacity="0.5">
                 <Button Opacity="0" Click="Button_CloseLogin"/>
             </Grid>
