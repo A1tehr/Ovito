@@ -271,11 +271,27 @@ namespace AVITO
                 {
                     if (image.AnnounsmentID == ad.Id)
                     {
-                        currentAnnouncements.Add(new Announcement(ad.Name, ad.Price, ad.Place, ad.CreateTime, image.GetBitmapImage()));
+                        var announcement = new Announcement(ad.Name, ad.Price, ad.Place, ad.CreateTime, image.GetBitmapImage());
+                        announcement.AccountID = ad.AccountID;
+                        announcement.CreateTime = ad.CreateTime;
+                        announcement.Name = ad.Name;
+                        announcement.Place = ad.Place;
+                        announcement.Price = ad.Price;
+                        announcement.Id = ad.Id;
+                        currentAnnouncements.Add(announcement);
                         break;
                     }
                 }
             }
+        }
+        public DataContext GetDB()
+        {
+            return db;
+        }
+
+        private void Button_GridAnnouncementClose(object sender, RoutedEventArgs e)
+        {
+            Grid_Announcement.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AVITO"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200">
+        Title="MainWindow" Height="850" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -71,18 +71,14 @@
                 <Button Content="Разместить объявление" Click="Button_CreateAnnouncment"/>
             </StackPanel>
         </Grid>
-        <Grid Grid.ColumnSpan="4" Grid.RowSpan="4">
+        <Grid x:Name="Grid_Announcement" Visibility="Collapsed" Grid.ColumnSpan="4" Grid.RowSpan="4">
             <Grid Background="Gray" Opacity="0.5">
-                <Button Opacity="0" Click="Button_CloseLogin"/>
+                <Button Opacity="0" Click="Button_GridAnnouncementClose"/>
             </Grid>
             <Grid Background="White" Margin="100,20">
                 <StackPanel>
-                    <StackPanel x:Name="StackPanel_ForImages" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,20,0,0" HorizontalAlignment="Center">
-                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
-                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
-                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
-                        <Image Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
-                    </StackPanel>
+                    <StackPanel x:Name="StackPanel_ForImages" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,20,0,0" HorizontalAlignment="Center" />
+                    
                     <TextBlock Text="Название" FontSize="40" HorizontalAlignment="Center"/>
                     <TextBlock x:Name="TextBlock_Name" Text="Название" FontSize="40" HorizontalAlignment="Center" Foreground="Blue" FontWeight="Bold" Margin="0,0,0,10"/>
                     <TextBlock Text="Цена" FontSize="40" HorizontalAlignment="Center"/>

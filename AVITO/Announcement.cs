@@ -72,7 +72,40 @@ namespace AVITO
 
             button.Click += (a, b) =>
             {
-
+                MainWindow.Instance.TextBlock_Name.Text = Name;
+                MainWindow.Instance.TextBlock_Price.Text = Price.ToString() + " P";
+                MainWindow.Instance.TextBlock_Place.Text = Place;
+                var db = MainWindow.Instance.GetDB();
+                string phone = "";
+                foreach(var ac in db.Accounts)
+                {
+                    if(ac.Id == AccountID)
+                    {
+                        phone = ac.Telephone;
+                        break;
+                    }
+                }
+                MainWindow.Instance.StackPanel_ForImages.Children.Clear();
+                foreach (var img in db.Images)
+                {
+                    if (img.AnnounsmentID == Id)
+                    {
+                        // <Image x:Name="Image_1" Source="add_photo.png" Width="200" Margin="0,0,10,0" Stretch="Fill" Height="200"/>
+                        var image = new Image()
+                        {
+                            Stretch = Stretch.Fill,
+                            Height = 200,
+                            Width = 200,
+                            Margin = new Thickness(0,0,10,0),
+                            HorizontalAlignment = HorizontalAlignment.Stretch,
+                            Source = img.GetBitmapImage()
+                        };
+                        MainWindow.Instance.StackPanel_ForImages.Children.Add(image);
+                    }
+                }
+                MainWindow.Instance.TextBlock_Number.Text = phone;
+                MainWindow.Instance.TextBlock_DateCreate.Text = CreateTime;
+                MainWindow.Instance.Grid_Announcement.Visibility = Visibility.Visible;
             };
 
             panel.Children.Add(button);
